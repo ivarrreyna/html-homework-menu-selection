@@ -2,24 +2,58 @@
 <html lang="en">
   <head>
     <title>Dado Tea</title>
+
+    <style>
+      .overview__openingdays {
+        margin-bottom: 0;
+      }
+
+      .overview__openinghours {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+
+      .overview__price {
+        margin-top: 0;
+      }
+
+      .categories {
+        border: 0.5px solid black;
+        margin: 15px 0;
+        padding: 10px;
+      }
+
+      .categories__title {
+        margin-top: 0;
+      }
+
+      .categories__input--label {
+        margin-bottom: 10px;
+      }
+    </style>
   </head>
   <body>
     <form action="">
       <h1>Dado Tea Lunch Special</h1>
 
-      <p style="margin-bottom: 0">Monday - Friday</p>
-      <p style="margin-top: 0; margin-bottom: 0">11am - 3pm</p>
-      <p style="margin-top: 0">$9.95 plus tax</p>
+      <p class="overview__openingdays">Monday - Friday</p>
+      <p class="overview__openinghours">11am - 3pm</p>
+      <p class="overview__price">$9.95 plus tax</p>
 
       <i>Includes sandwich, snack, and drink.</i>
 
-      <div style="border: 0.5px solid black; margin: 15px 0; padding: 10px">
-        <p style="margin-top: 0"><b>Order Information</b></p>
+      <div class="categories">
+        <p class="categories__title"><b>Order Information</b></p>
         <label for="name">
           <b>Name</b>
         </label>
         <br />
-        <input type="text" id="name" name="name" style="margin-bottom: 10px" />
+        <input
+          type="text"
+          id="name"
+          name="name"
+          class="categories__input--label"
+        />
         <br />
         <input type="radio" id="here" name="place" value="Here" />
         <label for="here">Here</label>
@@ -28,8 +62,8 @@
         <label for="togo">To Go</label>
       </div>
 
-      <div style="border: 0.5px solid black; margin: 15px 0; padding: 10px">
-        <p style="margin-top: 0">
+      <div class="categories">
+        <p class="categories__title">
           <b>Sandwiches</b>
         </p>
 
@@ -135,8 +169,8 @@
         ><br /><br />
       </div>
 
-      <div style="border: 0.5px solid black; margin: 15px 0; padding: 10px">
-        <p style="margin-top: 0"><b>Snack</b></p>
+      <div class="categories">
+        <p class="categories__title"><b>Snack</b></p>
 
         <label for="snacks">
           <b>Snacks</b>
@@ -159,8 +193,8 @@
         <br />
       </div>
 
-      <div style="border: 0.5px solid black; margin: 15px 0; padding: 10px">
-        <p style="margin-top: 0"><b>Drink</b></p>
+      <div class="categories">
+        <p class="categories__title"><b>Drink</b></p>
 
         <label for="drinks">
           <b>Drinks</b>
